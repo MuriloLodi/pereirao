@@ -31,13 +31,13 @@
     <meta name="twitter:image" content="https://opereirao.com.br/assets/img/og-cover.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/img/logopereira.png">
+    <link rel="icon" type="image/png" href="assets/img/logopereira.png">
 
     <!-- Preconnect/Preload (performance) -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preload" href="/assets/img/logopereira.png" as="image"
-        imagesrcset="/assets/img/logopereira.png 1x, /assets/img/logopereira@2x.png 2x" fetchpriority="high">
+    <link rel="preload" href="assets/img/logopereira.png" as="image"
+        imagesrcset="assets/img/logopereira.png 1x" fetchpriority="high">
 
     <!-- Google Fonts -->
     <link
@@ -422,6 +422,111 @@
         </div>
     </section>
 
+    <section id="faq" class="faq-section py-5">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <!-- Lado esquerdo: título + CTA -->
+                <div class="col-lg-5">
+                    <h2 class="faq-title display-4 fw-bold mb-4">Perguntas<br>frequentes</h2>
+                    <a href="#contato" class="btn-orcamento mb-4">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+                <!-- Lado direito: acordeon -->
+                <div class="col-lg-7">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <!-- Item 1 (aberto por padrão) -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq-h1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-c1" aria-expanded="true" aria-controls="faq-c1">
+                                    O Pereirão atende emergência 24h?
+                                </button>
+                            </h2>
+                            <div id="faq-c1" class="accordion-collapse collapse show" aria-labelledby="faq-h1"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim. Atendemos chamados de urgência 24 horas em Toledo-PR e região.
+                                    Para prioridade, chame no WhatsApp e envie endereço e fotos do problema.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq-h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">
+                                    Como funciona a compra de materiais?
+                                </button>
+                            </h2>
+                            <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Podemos usar itens do cliente ou fornecer tudo para você. No orçamento
+                                    detalhamos marcas, quantidades e valores.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq-h3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
+                                    Já tenho orçamento. Vocês cobrem ofertas?
+                                </button>
+                            </h2>
+                            <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Avaliamos propostas semelhantes e buscamos o melhor custo-benefício
+                                    mantendo a qualidade de materiais e execução.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq-h4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
+                                    Emitem nota fiscal e oferecem garantia?
+                                </button>
+                            </h2>
+                            <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim. Emitimos NF mediante solicitação e a garantia varia conforme
+                                    o serviço e os materiais utilizados (descrita no orçamento).
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq-h5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                                    O atendimento é no mesmo dia?
+                                </button>
+                            </h2>
+                            <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Na maioria dos casos sim. Emergências têm prioridade; serviços
+                                    não urgentes vão para o próximo horário disponível.
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /accordion -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="contato" class="py-5">
         <div class="container">
@@ -580,23 +685,52 @@
 }
 </script>
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "FAQPage",
- "mainEntity": [{
+ "mainEntity": [
+  {
    "@type": "Question",
-   "name": "Vocês atendem emergência 24h?",
-   "acceptedAnswer": {"@type":"Answer","text":"Sim. Atendemos chamados de urgência 24 horas em Toledo-PR e região."}
- },{
+   "name": "O Pereirão atende emergência 24h?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sim. Atendemos chamados de urgência 24 horas em Toledo-PR e região. Para prioridade, chame no WhatsApp e envie endereço e fotos do problema."
+   }
+  },
+  {
    "@type": "Question",
-   "name": "Quais formas de pagamento são aceitas?",
-   "acceptedAnswer": {"@type":"Answer","text":"Pix e cartões de crédito com parcelamento."}
- },{
+   "name": "Como funciona a compra de materiais?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Podemos usar itens do cliente ou fornecer tudo para você. No orçamento detalhamos marcas, quantidades e valores."
+   }
+  },
+  {
    "@type": "Question",
-   "name": "Atendem área comercial e residencial?",
-   "acceptedAnswer": {"@type":"Answer","text":"Sim, realizamos serviços elétricos, hidráulicos e de manutenção para residências e comércios."}
- }]
+   "name": "Já tenho orçamento. Vocês cobrem ofertas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Avaliamos propostas semelhantes e buscamos o melhor custo-benefício mantendo a qualidade de materiais e execução."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Emitem nota fiscal e oferecem garantia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sim. Emitimos NF mediante solicitação e a garantia varia conforme o serviço e os materiais utilizados, descrita no orçamento."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "O atendimento é no mesmo dia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Na maioria dos casos, sim. Emergências têm prioridade; serviços não urgentes são agendados para o próximo horário disponível."
+   }
+  }
+ ]
 }
 </script>
 

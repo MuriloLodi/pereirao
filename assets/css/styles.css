@@ -1676,3 +1676,114 @@ footer img {
   color: #fff;
   text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
 }
+
+
+.faq-title{
+  color: #ffffff;
+  line-height: .95;
+  margin-bottom: 10px;
+}
+
+#faqAccordion .accordion-item{
+  border: 0;
+  border-bottom: 1px solid rgba(2,6,23,.08);
+}
+#faqAccordion .accordion-item:last-child{
+  border-bottom: 0;
+}
+
+
+#faqAccordion .accordion-button{
+  font-weight: 600;
+  padding: 1.1rem 0;
+  background: transparent;
+  color: #0f172a;
+}
+#faqAccordion .accordion-button:focus{
+  box-shadow: none;
+}
+#faqAccordion .accordion-button:not(.collapsed){
+  color: var(--bs-primary, #3b82f6);
+  background: transparent;
+  border-bottom: 1px solid rgba(2,6,23,.06);
+}
+
+
+#faqAccordion .accordion-body{
+  color: #475569;
+  padding: .75rem 0 1.25rem;
+}
+
+
+#faqAccordion .accordion-button::after{
+  transform: scale(.9);
+  opacity: .7;
+}
+
+
+.faq-section{
+
+  background: linear-gradient(180deg, #0B1220, #0F172A 60%, #0F172A);
+  color: var(--ink);
+}
+
+.faq-section .faq-title{
+  color: #fff;
+}
+
+
+#faqAccordion .accordion-item{
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+#faqAccordion .accordion-button{
+  background: transparent;
+  color: #e5e7eb;
+  font-weight: 600;
+  padding-left: 0;    
+  padding-right: 0;
+  box-shadow: none;
+}
+
+#faqAccordion .accordion-button:not(.collapsed){
+  color: var(--primary, #FACC15);
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+
+#faqAccordion .accordion-body{
+  color: #cbd5e1;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+#faqAccordion .accordion-button::after{
+
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23e5e7eb' d='M5.23 7.21a.75.75 0 011.06.02L10 10.12l3.71-2.89a.75.75 0 111.04 1.08l-4.24 3.3a.75.75 0 01-.93 0l-4.24-3.3a.75.75 0 01-.02-1.06z'/%3E%3C/svg%3E");
+  transform: rotate(0deg) scale(1);
+  transition: transform .25s ease;
+  opacity: .9;
+}
+
+#faqAccordion .accordion-button:not(.collapsed)::after{
+  transform: rotate(180deg) scale(1);
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FACC15' d='M5.23 7.21a.75.75 0 011.06.02L10 10.12l3.71-2.89a.75.75 0 111.04 1.08l-4.24 3.3a.75.75 0 01-.93 0l-4.24-3.3a.75.75 0 01-.02-1.06z'/%3E%3C/svg%3E");
+}
+
+
+#faqAccordion .accordion-collapse{
+  transition: height .45s ease-in-out; 
+}
+
+#faqAccordion .collapsing{
+  transition: height .45s ease-in-out;  
+}
+
+#faqAccordion .accordion-button:focus{
+  box-shadow: 0 0 0 .15rem rgba(250,204,21,.25);
+}
+
