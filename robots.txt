@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://opereirao.com.br/sitemap.xml
