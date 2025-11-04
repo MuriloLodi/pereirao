@@ -21,6 +21,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,11 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+html, body {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation; /* compatibilidade */
+}
+
 
 h1,
 h2,
@@ -1787,3 +1793,12 @@ footer img {
   box-shadow: 0 0 0 .15rem rgba(250,204,21,.25);
 }
 
+.hero-section{
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+@supports (-webkit-touch-callout: none) {
+  .hero-section{ background-attachment: scroll !important; }
+}
