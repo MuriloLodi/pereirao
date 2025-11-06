@@ -1789,10 +1789,6 @@ footer img {
   transition: height .45s ease-in-out;  
 }
 
-#faqAccordion .accordion-button:focus{
-  box-shadow: 0 0 0 .15rem rgba(250,204,21,.25);
-}
-
 .hero-section{
   background-attachment: scroll !important;
   background-position: center center !important;
